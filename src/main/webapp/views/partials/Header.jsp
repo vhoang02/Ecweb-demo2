@@ -27,12 +27,12 @@
                       <a class="nav-link" href="#">Hello ${sessionScope.acc.username}</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="/logout">Logout</a>
+                      <a class="nav-link" href="${pageContext.request.contextPath}/logout">Logout</a>
                   </li>
               </c:if>
               <c:if test="${sessionScope.acc == null}">
                   <li class="nav-item">
-                      <a class="nav-link" href="/Login.jsp">Login</a>
+                      <a class="nav-link" href="${pageContext.request.contextPath}/Login.jsp">Login</a>
                   </li>
               </c:if>
           </ul>

@@ -23,6 +23,9 @@ public class HomeServlet extends HttpServlet {
             case "/Blog":
                 request.getRequestDispatcher("/views/user/Blog.jsp").forward(request, response);
                 break;
+            default:
+                request.getRequestDispatcher("/404.jsp").forward(request,response);
+                break;
         }
     }
 
